@@ -1,8 +1,11 @@
 {
     "private": true,
+    "homepage": "https://syednuman2001.github.io/EMS",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "deploy":"npm run build&&gh-pages -d build"
+
     },
     "devDependencies": {
         "axios": "^1.4.0",
@@ -11,7 +14,9 @@
     },
     "dependencies": {
         "dompurify": "^3.0.1",
+        "gh-pages": "^6.2.0",
         "laravel-echo": "^1.15.1",
         "pusher-js": "^8.2.0"
     }
+  
 }
